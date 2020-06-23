@@ -1,0 +1,37 @@
+
+
+<mat-card>
+  <form (submit)="onAddPlate(plateForm)" #plateForm="ngForm">
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="name"
+        ngModel
+        required
+        placeholder="Vehicle Owner"
+        #name="ngModel">
+        <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+    </textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="2"
+        name="plateNumber"
+        ngModel
+        required
+        minlength="6"
+        placeholder="Car Plate Number"
+        #plateNumber="ngModel">
+        <mat-error *ngIf="plateNumber.invalid">Please enter car plate number</mat-error>
+    </textarea>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit">Save Car Plate</button>
+  </form>
+</mat-card>
+
+
