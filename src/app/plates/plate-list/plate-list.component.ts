@@ -22,6 +22,10 @@ private platesSub: Subscription;
   });
  }
 
+ onDelete(plateId: string) {
+  this.platesService.deletePlate(plateId);
+}
+
  ngOnDestroy() {
    this.platesSub.unsubscribe();
  }
