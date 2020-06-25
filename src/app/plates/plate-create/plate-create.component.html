@@ -1,13 +1,13 @@
 
 
 <mat-card>
-  <form (submit)="onAddPlate(plateForm)" #plateForm="ngForm">
+  <form (submit)="onSavePlate(plateForm)" #plateForm="ngForm">
     <mat-form-field>
       <textarea
         matInput
         rows="2"
         name="name"
-        ngModel
+        [ngModel]="plate?.name"
         required
         placeholder="Vehicle Owner"
         #name="ngModel">
@@ -19,7 +19,7 @@
         matInput
         rows="2"
         name="plateNumber"
-        ngModel
+        [ngModel]="plate?.plateNumber"
         required
         minlength="6"
         placeholder="Car Plate Number"
