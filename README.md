@@ -1,5 +1,3 @@
-# car-plate-reg
-
-# front end: ng serve
-# back end: npm run start:server
+# front end command line: ng serve
+# back end command line: npm run start:server
  
