@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -13,6 +14,7 @@ import { AppComponent } from './app.component';
 import { PlateCreateComponent } from './plates/plate-create/plate-create.component';
 import { HeaderComponent } from './header/header.component';
 import { PlateListComponent } from './plates/plate-list/plate-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -25,6 +27,7 @@ import { PlateListComponent } from './plates/plate-list/plate-list.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
